@@ -1,5 +1,8 @@
-import "./globals.css";
 import { Inter } from "next/font/google";
+
+import Navbar from "../components/layout/Navbar";
+
+import "./globals.css";
 
 /*
   This is the root layout where its shared across all pages in the app. Root layout must contain html and body tags. The root layout is a server component and cannot be set to a client component. Ref: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts
@@ -28,10 +31,17 @@ export const metadata = {
   description: "Informative Website About Renewable Energy",
 };
 
-export default function RootLayout({ children }) {
+// eslint-disable-next-line prettier/prettier
+const RootLayout = (props) => {
+  const { children } = props;
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

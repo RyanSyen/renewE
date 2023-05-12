@@ -1,13 +1,12 @@
-import Link from "next/link";
 import React from "react";
-import { AppBar } from "@mui/material";
-import { Box } from "@mui/material";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Image from "next/image";
 import Typography from "@mui/material/Typography";
+import Image from "next/image";
+import Link from "next/link";
+
+import logo from "../../../public/logo.png";
+
 import { LogoWrapper, StyledLink } from "./Navbar.styles";
 
 const Navbar = () => {
