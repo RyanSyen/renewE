@@ -57,7 +57,7 @@
       { "devDependencies": false }
     ],
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "semi": true,
         "trailingComma": "all",

@@ -11,7 +11,10 @@ import { LogoWrapper, StyledLink } from "./Navbar.styles";
 
 const Navbar = () => {
   return (
-    <AppBar color="transparent">
+    <AppBar
+      color="transparent"
+      sx={{ maxHeight: "80px", background: "#DEF6F6" }}
+    >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <LogoWrapper>
           <Link

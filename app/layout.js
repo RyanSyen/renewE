@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 
-import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 import "./globals.css";
 
@@ -36,10 +36,8 @@ const RootLayout = (props) => {
   const { children } = props;
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   );
 };
