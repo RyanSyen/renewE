@@ -1,4 +1,4 @@
-import Education from "../../pages/education/education";
+import Education from "../../modules/education/education";
 
 const EducationPage = () => {
   return <Education />;

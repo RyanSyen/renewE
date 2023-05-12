@@ -4,6 +4,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
+import Footer from "../../components/layout/Footer";
 import Navbar from "../../components/layout/Navbar";
 import reneweKL from "../../public/renewe_kl.png";
 import reneweMain from "../../public/renewe_main.png";
@@ -217,6 +218,7 @@ const Education = () => {
           </Section>
         </HomeBody>
       </HomeSection>
+      <Footer />
     </Home>
   );
 };

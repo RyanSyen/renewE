@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 
-import Footer from "../components/layout/Footer";
-
 import "./globals.css";
 
 /*
@@ -37,7 +35,6 @@ const RootLayout = (props) => {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <Footer />
     </html>
   );
 };

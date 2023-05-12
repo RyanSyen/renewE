@@ -3,16 +3,19 @@ import styled from "styled-components";
 
 const IconWrapper = styled(Link)`
   text-decoration: none;
-  /* color: #086972; */
   cursor: pointer;
-  /* margin: 0 8px;
-  padding: 9px 15px; */
   transition: 0.3s;
   z-index: 2;
-  /* border-radius: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     transform: scale(1.1);
+    svg {
+      width: 35px;
+      height: 35px;
+    }
   }
 `;
 

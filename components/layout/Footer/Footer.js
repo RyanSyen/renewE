@@ -7,16 +7,20 @@ const Footer = () => {
   return (
     <div
       style={{
+        position: "relative",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         padding: "20px",
+        background: "#fff",
+        height: "70px",
       }}
     >
       <div>&copy; {currentYear} RenewE. All rights reserved.</div>
       <IconWrapper
         aria-label="Github Repository"
         href="https://github.com/vercel/commerce"
+        target="_blank"
       >
         <GitHubIcon />
       </IconWrapper>
