@@ -9,11 +9,16 @@ import logo from "../../../public/logo.png";
 
 import { LogoWrapper, StyledLink } from "./Navbar.styles";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { background } = props;
   return (
     <AppBar
       color="transparent"
-      sx={{ maxHeight: "80px", background: "#DEF6F6" }}
+      // sx={{ maxHeight: "80px", background: "#DEF6F6" }}
+      sx={{
+        maxHeight: "80px",
+        background: background != null ? background : "none",
+      }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <LogoWrapper>
@@ -50,26 +55,34 @@ const Navbar = () => {
           </Link>
         </LogoWrapper>
         <ul style={{ display: "flex" }}>
-          <StyledLink href={{ pathname: "/", query: { displayNavbar: true } }}>
+          <StyledLink
+            href={{
+              pathname: "/",
+              // query: { displayNavbar: true }
+            }}
+          >
             Home
           </StyledLink>
           <StyledLink
             href={{
               pathname: "/education",
-              query: { displayNavbar: true },
+              // query: { displayNavbar: true },
             }}
           >
             Education
           </StyledLink>
           <StyledLink
-            href={{ pathname: "/events", query: { displayNavbar: true } }}
+            href={{
+              pathname: "/events",
+              // query: { displayNavbar: true }
+            }}
           >
             Events
           </StyledLink>
           <StyledLink
             href={{
               pathname: "/merchandise",
-              query: { displayNavbar: true },
+              // query: { displayNavbar: true },
             }}
           >
             Merchandise
